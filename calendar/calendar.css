@@ -1,0 +1,78 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+#calendarBig {
+margin: auto;
+}
+
+ #thead{
+     margin: auto;
+    text-align:  center;
+      color: blue;
+ } 
+
+
+#calendarBig,
+#calendarBig table {
+    font: monospace;
+    line-height: 1.2em;
+    font-size: 18px;
+    text-align: center;
+}
+
+#calendarBig table {
+    border-radius: 5px;
+    box-shadow:1px 1px 5px rgba(141, 135, 135, 0.739);
+}
+
+tbody table{
+    background: rgba(245, 244, 244, 0.363);
+    padding: 5px;
+}
+
+#calendarBig table tbody td {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.smena_0{
+    background-color: rgba(141, 135, 135, 0.739);
+}
+
+.smena_1 {
+    background-color: rgba(255, 6, 6, 0.698);
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px grey;
+}
+
+.smena_2 {
+    background-color: rgba(252, 215, 5, 0.979);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px grey;
+}
+
+.smena_3 {
+    background-color: rgba(6, 255, 19, 0.698);
+    box-shadow: 2px 2px 3px grey;
+}
+.colors_smen{
+ 
+   display: flex; 
+flex-direction: row;
+  justify-content: center;
+}
+.colors_smen .smena_1, .colors_smen .smena_2, .colors_smen .smena_3{
+    padding: 8px;
+    margin: 5px ;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+}
+@media (max-width: 400px){
+    body{
+        width: 100vh;
+    }
+}
