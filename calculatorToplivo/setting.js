@@ -1,5 +1,6 @@
 
 let avtoName = document.querySelector("input[name=avto]").value;
+avtoName = avtoName.replace(/\s/g, '');
 let save = document.querySelector("input[value=Добавить]");
 let close = document.querySelector("input[value=Закрыть]");
 let outAllAuto = document.querySelector('.outAllAuto');
@@ -55,8 +56,7 @@ if (provNalichiya !== "avtoName") {
 // добавление авто в локал сторадж  и отображение добавленого 
 save.onclick = function () {
     avtoName = document.querySelector("input[name=avto]").value;
-    console.log(avtoName)
-
+    avtoName = avtoName.replace(/\s/g, '');
     // проверка на пустую строку
 
     if (avtoName != null && typeof avtoName !== "undefined") {
@@ -65,7 +65,6 @@ save.onclick = function () {
     if (!avtoName) {
         avtoName = "";
     }
-    console.log(avtoName)
     let km = document.querySelector("input[name=km]").value;
     let sN = document.querySelector("input[name=sN]").value;
     let bn = document.querySelector("input[name=bn]").value;
