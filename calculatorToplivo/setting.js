@@ -22,10 +22,10 @@ if (provNalichiya !== "avtoName") {
     let newAuto = document.createElement('div');
     newAuto.className = "outAllAuto";
 
-    avtoName = "АЦ-40(130)63Б"
+    avtoName = "УРАЛ(5557)"
 
     let km = 0.41
-    let sN = 0.300
+    let sN = 0.250
     let bn = 0.15
     avto =
     {
@@ -47,6 +47,37 @@ if (provNalichiya !== "avtoName") {
    <hr>`;
 
 
+
+
+
+
+
+    let newAuto1 = document.createElement('div');
+    newAuto1.className = "outAllAuto";
+
+    avtoName = "АЦ40(131)137"
+
+    let km1 = 0.51
+    let sN1 = 0.33
+    let bn1 = 0.15
+    avto =
+    {
+        'avtoName': avtoName,
+        'km': km1,
+        'sN': sN1,
+        'bn': bn1
+    }
+    localStorage.setItem(avtoName, JSON.stringify(avto));
+
+    let vozvrAvto1 = localStorage.getItem(avtoName);
+    vozvrAvto1 = JSON.parse(vozvrAvto1);
+    newAuto1.name = vozvrAvto1.avtoName;
+    newAuto1.innerHTML = `марка авто - <strong>${vozvrAvto1.avtoName}</strong>.<br>
+  расход на 1 км.- <strong>${vozvrAvto1.km1 || 0}</strong> л.<br>
+  1 минута с насосом - <strong>${vozvrAvto1.sN1 || 0}</strong> л.<br>
+  1 минута без насоса - <strong>${vozvrAvto1.bn1 || 0}</strong> л.<br> 
+  <input type="button" value="удалить" name=${vozvrAvto1.avtoName}>  <br>
+  <hr>`;
 
 
     window.location.reload();

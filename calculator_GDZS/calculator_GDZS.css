@@ -1,7 +1,7 @@
 body, select{
     font-size: 18px;
     font-family:'Times New Roman', Times, serif ;
-   
+    user-select: none;
 }
 span{
     font-size: 12px;
@@ -30,7 +30,7 @@ span{
     background-color:rgb(228, 228, 252);
     text-align: right;
     padding-right: 2%;
-    height: 120px;
+    height: 130px;
     font-weight: bold;
     padding-bottom: 4px;
     border-right: 4px hsl(81, 61%, 88%) solid;
